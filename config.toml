@@ -1,0 +1,253 @@
+baseURL = "https://rguyennot.github.io/resume/"
+languageCode = "en"
+title = "CV RGuyennot"
+theme = "resume"
+
+[params.matomo]
+        enable = false
+        siteId = 1
+        url = "stats.mousqueton.io"
+        enableJs = true
+        enableImg = false
+        [[params.matomo.list]]
+        option = "disableCookies"
+        [[params.matomo.list]]
+        option = "trackPageView"
+        [[params.matomo.list]]
+        option = "enableLinkTracking"
+
+[params]
+    author = "Rudy Guyennot"
+    description = "Resume - Rudy Guyennot - Junior SRE"
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Rudy Guyennot"
+        tagline = "Site Reliability Engineer Junior"
+        avatar = "face.png"
+
+    [params.available]
+      enable  = true
+
+      [params.drivinglicence]
+      enable = false
+
+    [params.contact]
+        enable = true
+        location = "Grenoble, France"
+        BirthDate = "1987-02-27"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:+33629910584"
+        text = "+33 (0)6 29 91 05 84"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:rudy@guyennot.fr"
+        text = "rudy@guyennot.fr"
+        # [[params.contact.list]]
+        # icon = "fas fa-globe"
+        # url = ""
+        # text = ""
+
+	[params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Hard skills"
+        [[params.skills.list.items]]
+        details = "Linux"
+        [[params.skills.list.items]]
+        details = "Docker / Docker-Compose"
+        [[params.skills.list.items]]
+        details = "Kubernetes"
+        [[params.skills.list.items]]
+        details = "Infrastructure As Code"
+
+       [[params.skills.list]]
+        title = "Soft skills"
+        [[params.skills.list.items]]
+        details = "Troubleshooting"
+        [[params.skills.list.items]]
+        details = "Bonne communication"
+        [[params.skills.list.items]]
+        details = "Gestion du stress"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Licence Pro. SIL (Alternance)"
+        university = "[IUT2](https://iut2.univ-grenoble-alpes.fr/), Grenoble"
+        dates = "2011 - 2012"
+		[[params.education.list]]
+        degree = "BTS IRIS (Alternance)"
+        university = "[Lycée du Grésivaudan](http://www.lgm.ac-grenoble.fr/), Meylan"
+        dates = "2009 - 2011"
+        [[params.education.list]]
+        degree = "Bac Professionnel"
+        university = "[Lycée Antoine](http://lyc21-antoine.ac-dijon.fr/), Chenôves (21)"
+        dates = "2007 - 2009"
+
+    [params.awards]
+        enable = true
+
+        [[params.awards.list]]
+        name = "Concepts Kubernetes | Helm"
+        body = "[KAIZEN SOLUTIONS](https://kaizen-solutions.net/)"
+        date = "2020"
+        [[params.awards.list]]
+        name = "Formation Docker | Compose"
+        body = "Datacenter"
+        date = "2010-2020"
+   	  	[[params.awards.list]]
+        name = "VMware VSICM (vSphere 6)"
+        body = "[GlobalKnowledge Lyon](https://www.globalknowledge.com/fr-fr/formations/nos-centres-en-france/lyon)"
+        date = "2016"
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Français"
+        level = "natif"
+        [[params.languages.list]]
+        name = "Anglais"
+        level = "technique"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Voyages"
+        [[params.interests.list]]
+        name = "Drones FPV"
+        [[params.interests.list]]
+        name = "Domotique DIY"
+        [[params.interests.list]]
+        name = "Jeux Videos"
+
+    [params.summary]
+        enable = true
+        text = "Passionné d’ingénierie système, j’ai acquis toute mon expérience autour d’infrastructures ‘On Premise’ en Datacenters. Le métier des ‘Ops’ ayant particulièrement évolué ces dernières années, j’ai logiquement été attiré par le métier de SRE et le monde du ‘DevOps’ avec toutes les nouvelles solutions 'open source' qui gravitent autour. Désormais, j’aspire à l’automatisation des infrastructures pour plus de reproductibilité et de rapidité dans les déploiements."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Site Reliability Engineer Junior"
+        dates = "Juin 2022 - Decembre 2022"
+        company = "[WIZBII](https://www.wizbii.com)"
+        details = "Intégré à l'équipe SRE (Site Reliability Engineer), je suis garant de l'infrastructure Cloud GCP composée de 3 clusters Kubernetes GKE avec une stack technique récente. Toute l'infrastructure en place est gérée 'As Code' grâce à Terraform. En étroite collaboration avec les équipes de développeurs backend/frontend, j'interviens avec eux sur des problématiques de déploiements (Helm) et d'intégration continue (GitLab CI)."
+        [[params.experience.list.items]]
+        details = "Amélioration de la stack Monitoring (thanos, prometheus, grafana)"
+        [[params.experience.list.items]]
+        details = "Amélioration de l'Alerting (alertmanager, slack, karma)"
+        [[params.experience.list.items]]
+        details = "Migration des applications WIZBII vers une librairie Helm développée en interne."
+        [[params.experience.list.items]]
+        details = "Mise à jour des Ingress-controllers Nginx en vue de l'upgrade des clusters K8S 1.21 vers 1.22+"
+        [[params.experience.list.items]]
+        details = "Mise à jour d'external-dns pour la gestion des noms de domaines des 3 clusters"
+        [[params.experience.list.items]]
+        details = "Mise à jour des instances Memorystore (Redis v4 à v6)"
+        [[params.experience.list.items]]
+        details = "Création d'un PoC K8S OVH via Terraform pour migrer des plateformes dans un DC Français"
+
+
+        [[params.experience.list]]
+        title = "Ingénieur Infrastructure | 'DevOps'"
+        dates = "Septembre 2020 - Mai 2022"
+        company = "[KAIZEN SOLUTIONS](https://www.kaizen-solutions.net)"
+        details = "Détaché au sein d’un grand fournisseur d’énergie Français, j’ai pour mission d’accompagner les équipes de développeurs dans la migration des applications métiers dans Kubernetes."
+        [[params.experience.list.items]]
+        details = "Etude de faisabilité pour déployer Kubernetes dans l’infrastructure existante (VMWare)"
+        [[params.experience.list.items]]
+        details = "Création d’images immuables (templates CentOS) avec Packer"
+        [[params.experience.list.items]]
+        details = "Création de clusters Kubernetes Vanilla (kubeadm) avec Terraform"
+        [[params.experience.list.items]]
+        details = "Déploiement des applications dans Kubernetes à l’aide de Charts Helm"
+        [[params.experience.list.items]]
+        details = "Monitoring des clusters, des pods et des applicatifs de production (Prometheus, Grafana)"
+
+
+        [[params.experience.list]]
+        title = "Ingénieur Système Linux"
+        dates = "Septembre 2018 - Septembre 2020"
+        company = "[KAIZEN SOLUTIONS](https://www.kaizen-solutions.net)"
+        details = "Détaché au sein d’un grand fournisseur d’énergie Français, j’ai pour mission d’assurer la continuité de service des applications métiers hébergées en intervenant sur un large scope."
+        [[params.experience.list.items]]
+        details = "Amélioration continue de l’infrastructure 'On Premise' (VMware vCenter 6.5)"
+        [[params.experience.list.items]]
+        details = "Intégration de nouveaux équipements physiques (Switchs FC, Baies SAN/NAS, ESXi, Robotique LTO)"
+        [[params.experience.list.items]]
+        details = "Déploiements continus des applications métiers en mode RUN (Jenkins, Gitlab)"
+        [[params.experience.list.items]]
+        details = "Gestion des configurations et sécurisation des OS via playbooks Ansible"
+        [[params.experience.list.items]]
+        details = "Création d’une forge d’outils pour les équipes de développeurs (Gitlab, Jenkins, Nexus…)"
+
+        [[params.experience.list]]
+        title = "Administrateur Stockage | Sauvegarde"
+        dates = "Septembre 2014 - Septembre 2018"
+        company = "[EOLAS](https://www.eolas.fr/)"
+        details = "Arrivé comme consultant junior, je me suis ensuite spécialisé dans les domaines du Stockage et Backup IaaS (dédié / mutualisé) des serveurs physiques et virtuels de production 24/7 (astreintes)."
+        [[params.experience.list.items]]
+        details = "Provisionnement de stockage SAN/NAS, assurer la continuité de service en haute disponibilité"
+        [[params.experience.list.items]]
+        details = "Monitoring Latence/IOPS du stockage SAN/NAS (API REST, InfluxDB, Grafana)"
+        [[params.experience.list.items]]
+        details = "Réplications de serveurs virtuels (VM) inter Datacenters (Veeam Backup & Replication)"
+        [[params.experience.list.items]]
+        details = "Mise en place de PRA sur des infrastructures virtuelles (Veeam Backup & Replication)"
+        [[params.experience.list.items]]
+        details = "Administration et exploitation des infrastructures de sauvegarde en Datacenter"
+
+        [[params.experience.list]]
+        title = "Administrateur Système"
+        dates = "Septembre 2012 - Septembre 2014"
+        company = "[EOLAS](https://www.eolas.fr/)"
+        details = "Rattaché à l’équipe Hosting, j’ai assuré le support N1 / N2 des serveurs hébergés en 24/7 (astreintes)."
+	     [[params.experience.list.items]]
+        details = "DAdministration système avancée (Linux / Windows) des plateformes clientes 24/24 7/7"
+        [[params.experience.list.items]]
+        details = "Réalisation de projets d’infrastructure (IaaS / PaaS)"
+        [[params.experience.list.items]]
+        details = "Rédaction des documentations techniques et d’exploitation"
+        [[params.experience.list.items]]
+        details = "Contribuer aux actions sécurité dans un contexte de conformité ISO 27001 / HDS (données de santé)"
+
+    [params.information]
+        enable = true
+
+        [[params.information.list]]
+           title = "Communautés & Inspirations DevOps"
+    [[params.information.list.items]]
+              details = "Membre actif de la communauté créée par Christophe Chaudier : [Les Compagnons du DevOps](https://forum.compagnons-devops.fr/)."
+    [[params.information.list.items]]
+              details = "Ecoute de nombreux Podcasts liés au DevOps : [Radio DevOps](https://open.spotify.com/show/3RLaarKccDFOu89lSrC8w0), [Electro Monkeys](https://open.spotify.com/show/3P9JtwxgNJktyemtinMcLe), [Dev’Obs](https://devobs.p7t.tech/)..."
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "https://github.com/rguyennot"
+        title = "RGuyennot"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "https://www.linkedin.com/in/rguyennot"
+        title = "Rudy Guyennot"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "https://twitter.com/RGuyennot"
+        title = "RGuyennot"
+
+        [params.speaker]
+            enable = false
+	    [[params.speaker.list]]
+            details = "2021 · Co-host a weekly Room about [CyberSecurity](https://www.joinclubhouse.com/club/club-cybers%C3%A9curit%C3%A9-f) on [Clubhouse](https://www.joinclubhouse.com/)"
+
