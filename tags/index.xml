@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on CV RGuyennot</title>
-    <link>https://rguyennot.github.io/tags/</link>
+    <link>https://rguyennot.github.io/resume/tags/</link>
     <description>Recent content in Tags on CV RGuyennot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>fr</language><atom:link href="https://rguyennot.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>fr</language><atom:link href="https://rguyennot.github.io/resume/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
