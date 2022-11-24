@@ -11,7 +11,7 @@ Resume of [@rguyennot](https://github.com/rguyennot/resume), created and deploye
 
 ## Demo 
 
-You can see it in action on [cowboysmall's resume](https://themes.gohugo.io/theme/hugo-devresume-theme/)
+You can see it in action on [devresume](https://themes.3rdwavemedia.com/demo/bs5/devresume/)
 
 ## 👍🏻 Getting Started
 
@@ -24,6 +24,11 @@ These instructions will get you a copy of the project up and running on your loc
 - You can use JMousqueton's `config.toml` in this [repository](https://github.com/JMousqueton/Configuration-Hugo) : `wget https://github.com/JMousqueton/Configuration-Hugo/blob/main/jmousqueton.github.io/config.toml .`
 - Add JMousqueton's theme : `cd myresume.github.io/themes ; git clone https://github.com/jmousqueton/resume`
 - Edit the file [config.toml](config.toml) with your informations
+
+## 💡 baseURL in config.toml
+> WARNING : Unless this is present in your config.toml, your website won’t work !
+
+Don’t forget to rename your **baseURL** in `config.toml` with the value [https://<USERNAME>.github.io]() for your user repository, or [https://<USERNAME>.github.io/<REPOSITORY_NAME>]() for a project repository.
 
 ## :rocket:  Running a local testing server
 
@@ -39,7 +44,7 @@ Run `hugo server -D` then open [http://localhost:1313/](http://localhost:1313/).
 hugo
 ```
 
-➡️ To push to your github repository :   
+➡️ To push the public/ directory to your github repository :   
 ```shell
 cd public/
 git remote add origin https://github.com/username/resume.git
@@ -49,11 +54,11 @@ git commit -m "rebuilding my site $(date)"
 git push -u origin main
 ```
 
-➡️ Last step, activate Github pages to your repository and voilà !
+➡️ Go to [https://USERNAME.github.io/<REPOSITORY_NAME>]() an voilà ! 
 
-## 🙎🏻‍♂️ Authors
+## 🙎🏻‍♂️ Author
 
-**Rudy Guyennot**
+**Rudy GUYENNOT**
 
 ## 📜 License
 
